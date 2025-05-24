@@ -1,6 +1,37 @@
 Mean-Variance-Standard Deviation Calculator
 
-This project implements a Python function that calculates various statistical properties (mean, variance, standard deviation, max, min, and sum) for a 3x3 matrix derived from a list of nine numbers. The calculations are performed for the rows, columns, and the flattened matrix.FeaturesThe calculate function takes a list of 9 numbers and returns a dictionary containing the following statistics:Mean: Calculated for columns, rows, and the flattened matrix.Variance: Calculated for columns, rows, and the flattened matrix.Standard Deviation: Calculated for columns, rows, and the flattened matrix.Max: The maximum value for columns, rows, and the flattened matrix.Min: The minimum value for columns, rows, and the flattened matrix.Sum: The sum of values for columns, rows, and the flattened matrix.If the input list does not contain exactly nine numbers, a ValueError is raised.SetupTo run this project, you'll need Python and the NumPy library installed.PrerequisitesPython 3.xpip (Python package installer)InstallationClone the repository (if applicable) or create the project files:If you're working in a Codespace, you likely already have the files. Otherwise, ensure you have the following files in your project directory:mean_var_std.pymain.pytest_module.py (optional, for running tests)Install NumPy:Open your terminal or command prompt and run:pip install numpy
+This project implements a Python function that calculates various statistical properties (mean, variance, standard deviation, max, min, and sum) for a 3x3 matrix derived from a list of nine numbers. The calculations are performed for the rows, columns, and the flattened matrix.
+
+Features
+
+The calculate function takes a list of 9 numbers and returns a dictionary containing the following statistics:
+
+-Mean: Calculated for columns, rows, and the flattened matrix.
+
+-Variance: Calculated for columns, rows, and the flattened matrix.
+
+-Standard Deviation: Calculated for columns, rows, and the flattened matrix.
+
+-Max: The maximum value for columns, rows, and the flattened matrix.
+
+-Min: The minimum value for columns, rows, and the flattened matrix.
+
+-Sum: The sum of values for columns, rows, and the flattened matrix.
+
+If the input list does not contain exactly nine numbers, a ValueError is raised.
+
+Setup
+To run this project, you'll need Python and the NumPy library installed.
+
+Prerequisites
+
+Python 3.x
+
+pip (Python package installer)
+
+InstallationClone the repository (if applicable) or create the project files:
+
+If you're working in a Codespace, you likely already have the files. Otherwise, ensure you have the following files in your project directory:mean_var_std.pymain.pytest_module.py (optional, for running tests)Install NumPy:Open your terminal or command prompt and run:pip install numpy
 Usagemean_var_std.py
 
 This file contains the core calculate function.
@@ -75,10 +106,20 @@ except ValueError as e:
 # Run unit tests automatically (if test_module.py exists)
 # main(module='test_module', exit=False)
 To run the main.py script, navigate to your project directory in the terminal and execute:python main.py
-You will see the calculated statistics printed to the console.TestingThe project includes a test_module.py file for unit testing
-the calculate function.test_module.py (Example)import unittest
+You will see the calculated statistics printed to the console.
 
-import mean_var_std # Import your module
+#Testing
+
+The project includes a test_module.py file for unit testing
+the calculate function.
+
+test_module.py (Example)
+
+import unittest
+
+import mean_var_std 
+
+# Import your module
 
 class UnitTests(unittest.TestCase):
   
@@ -105,5 +146,10 @@ class UnitTests(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
-To run the unit tests, ensure the main(module='test_module', exit=False) line in main.py is uncommented, or simply run test_module.py directly:python -m unittest test_module.py
+
+unittest.main()
+
+To run the unit tests, ensure the main(module='test_module', exit=False) line in main.py is uncommented, or simply 
+run test_module.py directly:
+
+python -m unittest test_module.py
